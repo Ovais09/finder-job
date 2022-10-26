@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import { useState } from 'react'
+import Reviews from '../components/reviews'
 
 export default function Home({ sortedCountryNames }: { sortedCountryNames: string[] }) {
 
@@ -39,6 +40,10 @@ export default function Home({ sortedCountryNames }: { sortedCountryNames: strin
           return <option key={city}> {city}</option>
         })}
       </select>
+
+      <br />
+      <br />
+      <Reviews />
     </div>
   )
 }
